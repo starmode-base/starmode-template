@@ -1,17 +1,53 @@
 # STΛR MODΞ 🦨
 
 Production deployment: https://sworks.starmode.app/
+## How to fork?
+### Link Vercel
+1. Vercel https://vercel.com/starmode
+1. add new project
+2. Adjust Github app perms
+3. Select the new repository (keep selected Repos)
+4. Back to vercel - the new repo should appear.
+5. Import new repo
+6. Select Framework preset SolidStart (v1)
+7. Deploy
+8. Add PORT={random number} to vercel ENV VAR **Development Only**
 
-## Objective
+### Set up Clerk
+1. Go to https://dashboard.clerk.com/
+2. Select STARMODΞ org
+3. Create new application (only enable email for simplicity)
+4. Go to configure - disable password
+5. Go to overview - Select Tanstack framework
+6. Paste ENV Vars into Vercel Env vars. Rename CLERK_PUBLISHABLE_KEY to VITE_CLERK_PUBLISHABLE_KEY
 
-1. Connect to Plaid and download transactions
-2. Map transactions to a hardcoded chart of accounts
-3. Use it for monthly personal/SMB expense overview
+### Set up Neon
+1. Go to Neon:
+2. Select STARMODΞ org
+3. New Project
+4. Select region = N Virginia
+5. Create
+6. Go to Vercel STARMODΞ org: https://vercel.com/starmode/~/integrations
+7. Select Neon: Manage > Manage Access
+8. Select New Project
+9. Save
+10. Back to Neon: https://console.neon.tech/app/projects/odd-morning-40576850/integrations#featured
+11. Vercel: Add > Select New Project > Connect
+12. Evironment Variable will now be automatically added to Vercel Project
+#### Set up dev branches
+1. Go to Neon Branches: https://console.neon.tech/app/projects/odd-morning-40576850/branches
+2. New Branch - 'dev-spencer' (then add 'dev-mikael') *exact string match is important.*
+3. Create New Branch
+4. Copy pooled connection URL
+5. Back to Vercel ENV VARS: https://vercel.com/starmode/expert-system/settings/environment-variables
+6. Add ENV VAR: SPENCER_DATABASE_URL with pooled connection. **Select only Development**
+7. Also add unpooled URL as SPENCER_DATABASE_URL_UNPOOLED
+8. Optional- add additional users
 
-## Contributing
+### Set up ABLY
+TODO
 
-### Prerequisites
-
+### Set up IDE
 1. Install [Node.js](https://nodejs.org/) (v22.x)
 1. Install [Bun](https://bun.sh/)
 1. Clone the [git repo](https://github.com/starmode-base/starmode-sworks)
