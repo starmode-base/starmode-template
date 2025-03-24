@@ -2,8 +2,8 @@
 
 ## How to fork?
 
-1. Update `name` in [package.json](package.json) from `starmode-sworks` to something else
-1. Update the `id` in [src/inngest/client.ts](src/inngest/client.ts) from `starmode-sworks` to something else
+1. Update `name` in [package.json](package.json) from `starmode-template` to something else
+1. Update the `id` in [src/inngest/client.ts](src/inngest/client.ts) from `starmode-template` to something else
 
 ### Link Vercel
 
@@ -60,12 +60,12 @@ TODO
 
 1. Install [Node.js](https://nodejs.org/) (v22.x)
 1. Install [Bun](https://bun.sh/)
-1. Clone the [git repo](https://github.com/starmode-base/starmode-sworks)
+1. Clone the [git repo](https://github.com/starmode-base/starmode-template)
 1. Install dependencies: `bun install`
 1. Link the Vercel project, to be able to pull development environment variables from Vercel: `bunx vercel link`
-   - Set up “~/GitHub/starmode-base/starmode-sworks”? yes
+   - Set up “~/GitHub/starmode-base/starmode-template? yes
    - Which scope should contain your project? STAR MODE
-   - Found project “starmode/starmode-sworks”. Link to it? yes
+   - Found project “starmode/starmode-template. Link to it? yes
 
 ### Local development
 
@@ -94,7 +94,7 @@ TODO
 
 ## Service providers
 
-- 🆓 [GitHub](https://github.com/starmode-base/starmode-sworks)
+- 🆓 [GitHub](https://github.com/starmode-base/starmode-template)
 - 💰 [Vercel](https://vercel.com/)
 - 🆓 [Clerk](https://clerk.com/)
 - 💰 [Neon](https://neon.tech/)
