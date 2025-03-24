@@ -1,8 +1,9 @@
 # STΛR MODΞ 🦨
 
-Production deployment: https://sworks.starmode.app/
-
 ## How to fork?
+
+1. Update `name` in [package.json](package.json) from `starmode-sworks` to something else
+1. Update the `id` in [src/inngest/client.ts](src/inngest/client.ts) from `starmode-sworks` to something else
 
 ### Link Vercel
 
